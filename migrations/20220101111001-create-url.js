@@ -14,9 +14,6 @@ module.exports = {
       long_url: {
         type: DataTypes.STRING
       },
-      short_url: {
-        type: DataTypes.STRING
-      },
       createdAt: {
         allowNull: false,
         type: DataTypes.DATE

@@ -22,8 +22,7 @@ module.exports = (sequelize, DataTypes) => {
   };
   UrlDB.init({
     url_code: DataTypes.STRING,
-    long_url: DataTypes.STRING,
-    short_url: DataTypes.STRING
+    long_url: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'UrlDB',
