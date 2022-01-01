@@ -10,7 +10,7 @@ const PORT =process.env.PORT || 5000;
 app.use(express.json());
 app.use(express.urlencoded({extended:false}))
 
-app.use("/api/url",createRoute);
+app.use("/url",createRoute);
 app.use("/",redirectRoute);
 
 app.listen(PORT,()=> console.log(`Server Listening On Port ${PORT}`))

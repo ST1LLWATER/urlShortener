@@ -18,14 +18,14 @@ router.post("/shorten",async (req,res)=>{
                 }
             })
             if(url){
-               return res.json(url.url_code);
+               return res.status(200).json(url.url_code);
             }
             else{
                 const URLEntry=await UrlDB.create({
                     long_url:longUrl,
                     url_code
                 })
-                return res.json(URLEntry.url_code);
+                return res.status(200).json(URLEntry.url_code);
             }
         }catch(err){
             console.log(err);
